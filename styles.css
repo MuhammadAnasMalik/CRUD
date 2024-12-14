@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-color: #f9f9fb;
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    color: #2a3d66;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #003d80;
+    transform: scale(1.05);
+}
+
+#itemsTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#itemsTable th, #itemsTable td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e4e7ea;
+}
+
+#itemsTable th {
+    background-color: #f4f6f9;
+    color: #4b6584;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#itemsTable td {
+    font-size: 14px;
+    color: #2d4059;
+}
+
+button.deleteBtn {
+    background-color: #ff3e4d;
+}
+
+button.deleteBtn:hover {
+    background-color: #d63340;
+}
+
+button.editBtn {
+    background-color: #ff9f1a;
+}
+
+button.editBtn:hover {
+    background-color: #e68a00;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #d6d8dc;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#formContainer input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d6d8dc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+#cancelBtn {
+    background-color: #a0aec0;
+}
+
+#cancelBtn:hover {
+    background-color: #71787f;
+}
